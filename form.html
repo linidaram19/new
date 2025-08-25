@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>student form</title>
+</head>
+<body>  
+
+<h1>Student Details</h1> 
+<form method="POST" action="form.php">
+<h3>Name
+<input type="text" name="name" placeholder="emter your name" required><br></h3>
+<h3>Suc code
+<input type="number" name="suc" placeholder="Enter your succode" required><br></h3>
+<h3> Email ID
+<input type="email" name="email" placeholder=" Enter your E-Mail ID" required><br></h3>
+<h3> Gender</h3>
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female<br>
+<h3> Age
+<input type="number" name="age" placeholder="enter your age" required><br></h3>
+<h3>Mobile number
+ <input type="number" name="mobile_number" placeholder="enter your mobile number" required><br></h3>
+<h3>ssc percentage
+<input type="number" name="ssc" placeholder="emter your ssc percentage" required><br></h3> 
+<h3>Inter percentage
+<input type="number" name="inter" placeholder="emter your inter percentage" required><br></h3>
+<h3>Degree percentage
+<input type="number" name="Degree" placeholder="emter your Degree percentage" required><br></h3> 
+<h3>Select the group</h3>
+    <input type="radio"  name="group" value="BCA-DS">
+  <label for="group">BCA-DS</label><br>
+  <input type="radio" id="BSC-CS" name="group" value="BSC-CS">
+  <label for="group1">BSC-CS</label><br>
+  <input type="radio" id="BCA" name="group" value="BCA">
+  <label for="group2">BCA</label><br>
+  <input type="radio" id="BSC-DS" name="group" value="BSC-DS">
+  <label for="group3">BSC-DS</label><br>
+  <input type="radio" id="Other" name="group" value="Other">
+  <label for="group4">Other</label><br>
+<h3>Select languages</h3>
+<input type="checkbox" name="language[]" value="telugu">telugu
+<input type="checkbox" name="language[]" value="english">english
+<input type="checkbox" name="language[]" value="hindi">hindi
+<input type="checkbox" name="language[]" value="urdhu">urdhu
+<br>
+<h3>Resume</h3>
+<input type="file" name="Resume" value="seclect the resume"><br>
+<label for="datetime"><h3>Select date and time</label>
+
+<input type="datetime-local" id="datetime" name="datetime"><br><br>
+<input type="submit" onclick="alert('your from is submited')"  name="submit" value="Submit">
+<input type="reset" name ="reset" value="reset">
+</form>
+</body>
+</html>    
